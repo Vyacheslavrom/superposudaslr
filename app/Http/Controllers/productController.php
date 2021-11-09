@@ -46,6 +46,7 @@ class productController extends Controller
             $page=array('success'=>'1', 'order'=>array('id'=>'45555', 'orderType'=>'fizik'));
             //print_r($page);
             if (isset($page['success'])) {
+                  //$idorder = $page['order']['id'];
                   $idorder = $page['order']['id'];
                   $orderType = $page['order']['orderType'];
                   $clientfio = $page['order']['orderType'];

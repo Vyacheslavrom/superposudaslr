@@ -20,3 +20,4 @@ Route::get('/', function () {
 //Route::post('/get-products', 'productController@select')-> name('get-produkts');
 Route::get('/get-products', [\App\Http\Controllers\productController::class,'celect'])->name('get-p');
 
+Route::get('/trello/{any}', [App\Http\Controllers\spaController::class, 'index'])->where('any', '.*');

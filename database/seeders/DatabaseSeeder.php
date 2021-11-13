@@ -13,6 +13,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+           /**
+     * Запустить наполнение базы данных.
+     *
+     * @return void
+     */
+        $this->call([
+            DeskSeeder::class,
+            DeskListSeeder::class,
+            CardSeeder::class,
+            TaskSeeder::class
+            
+
+
+        ]);
+
+        //Card::factory()->count(50)->create();
+
+
     }
 }
